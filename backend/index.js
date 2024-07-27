@@ -2,6 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 const authRoutes = require('./routes/auth');
+// const loginRoutes = require('./routes/login');
+const dotenv = require('dotenv');
+dotenv.config();
 
 mongoose.connect('mongodb://localhost:27017/real-est', {
     useNewUrlParser: true,

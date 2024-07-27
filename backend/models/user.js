@@ -21,6 +21,12 @@ const userSchema = new Schema({
         minLength: 6,
         maxLength: 1024,
     },
+    confirm_password: {
+        type: String,
+        required: [true, 'Password is required'],
+        minLength: 6,
+        maxLength: 1024,
+    },
     phone: {
         type: String,
         required: [true, 'Phone is required'],
